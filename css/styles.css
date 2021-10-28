@@ -1,0 +1,148 @@
+/* ---------- root variables ---------- */
+:root {
+  --blue: #C2D5DC;
+  --light-brown: #DBCFC1;
+  --dark-brown: #8F7961;
+  --text-color-light: #6F868F;
+  --text-color-dark: #332B23;
+}
+
+/* ---------- general styling ---------- */
+html,
+body {
+  background-image: url(../img/background.jpg);
+  color: var(--text-color-light);
+  font-family: 'Balsamiq Sans', cursive;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Balsamiq Sans', cursive;
+  color: var(--text-color-dark);
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+img {
+  width: 300px;
+  padding-bottom: 1.5rem;
+}
+
+/* ---------- tabbar styling ---------- */
+nav {
+  background-color: var(--blue);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  display: inline-block;
+  color: var(--text-color-dark);
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+/* Add a color to the active/current link */
+nav a.active {
+  color: var(--text-color-light);
+}
+
+/* ---------- topbar styling ---------- */
+.topbar {
+  background-color: var(--blue);
+  padding: 13px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.top_text {
+  font-family: 'Lobster', cursive;
+  margin-top: -20px;
+}
+
+.logo {
+  width: 3rem;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: -5px;
+}
+
+
+
+
+/*-------------*/
+.selector {
+  margin-top: 6rem;
+  width: 12rem;
+  color: var(--dark-brown);
+  background-color: var(--blue);
+  height: 2.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Balsamiq Sans', cursive;
+  border: none;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+  box-shadow: 10px 10px 20px grey;
+}
+
+
+
+.mainframe {
+  background-image: url(../img/frame.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 700px;
+}
+
+.photos-container {
+  padding-top: 4rem;
+}
+
+.mainphoto {
+  width: 500px;
+}
+
+.catflex {
+  padding-top: 2rem;
+}
+
+.frame {
+  background-image: url(../img/frame.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 410px;
+}
+
+/* ---------- page styling ---------- */
+.page {
+  display: block;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  animation: fadeIn 0.4s;
+  /* padding equals height of tabbar and topbar */
+  padding: 55px 0;
+}

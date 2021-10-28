@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cat'astrophe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="get your lucky cat">
+  <meta name="author" content="Olga Mozejko">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="./img/logo_mini.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lobster&display=swap" rel="stylesheet"> 
+
+
+</head>
+
+<body>
+  <!-------------- Navigation -------------->
+  <nav>
+    <a class="nav-link" href="/">Your-CAT</a>
+    <a class="nav-link" href="/allcats">CaT'egories</a>
+  </nav>
+
+  <main id="appRoot">
+    <!-------------- Pages -------------->
+    <!-- home page -->
+    <section id="home" class="page">
+      <header class="topbar">
+        <h1><img class="logo" src="./img/logo.png">Cat'astrophe</h1>
+        <p class="top_text">get your daily cat love...</p>
+      </header>
+
+      <div id="photos-container" class="photos-container">
+        </div>
+    </section>
+
+    <!-- categories page -->
+    <section id="allcats" class="page">
+      <header class="topbar">
+        <h1>CAT'egories</h1>
+      </header>
+      
+      <select class="selector" id="select-category" onchange="categorySelected(this.value)">
+        <option select disabled>Select CATegory</option>
+    </select>
+    <div class="catflex">
+    <div id="photos-by-category-container" class="photos-container">
+      <article class="empty">
+      <p>please, select CATegory</p>
+      </article>
+    </div>
+  </div>
+  </section>
+
+   
+  </main>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/router.js"></script>
+</body>
+
+</html>
